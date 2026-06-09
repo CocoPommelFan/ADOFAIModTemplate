@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+    </PropertyGroup>
+
+	<PropertyGroup>
+		<ModName>ADOFAIModTemplate</ModName>
+		<GameExePath>C:\Program Files (x86)\Steam\steamapps\common\A Dance of Fire and Ice\A Dance of Fire and Ice.exe</GameExePath>
+		<Autostart>false</Autostart>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<GameDir>$([System.IO.Path]::GetDirectoryName($(GameExePath)))</GameDir>
+		<GameFileName>$([System.IO.Path]::GetFileNameWithoutExtension($(GameExePath)))</GameFileName>
+		<AssembliesDir>$(GameDir)\$(GameFileName)_Data\Managed</AssembliesDir>
+		<ModsDir>$(GameDir)\Mods</ModsDir>
+		<ModDir>$(ModsDir)\$(ModName)</ModDir>
+	</PropertyGroup>
+
+	<!-- References -->
+	<ItemGroup>
+		<Reference Include="0Harmony">
+			<HintPath>$(AssembliesDir)\UnityModManager\0Harmony.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityModManager">
+			<HintPath>$(AssembliesDir)\UnityModManager\UnityModManager.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine">
+			<HintPath>$(AssembliesDir)\UnityEngine.dll</HintPath>
+		</Reference>
+		<Reference Include="Assembly-CSharp">
+			<HintPath>$(AssembliesDir)\Assembly-CSharp.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.IMGUIModule">
+			<HintPath>$(AssembliesDir)\UnityEngine.IMGUIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>$(AssembliesDir)\UnityEngine.CoreModule.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Core\" />
+	</ItemGroup>
+
+	<Target Name="Copy" AfterTargets="Build">
+		<MakeDir Directories="$(ModDir)" Condition="!Exists('$(ModDir)')" />
+		<Copy SourceFiles="Info.json" DestinationFolder="$(ModDir)" />
+		<Copy SourceFiles="$(TargetDir)\$(TargetFileName)" DestinationFolder="$(ModDir)" />
+		<Message Importance="high" Text="$(TargetDir)\$(TargetFileName) -&gt; $(ModDir)" />
+	</Target>
+
+	<Target Name="GameLaunch" AfterTargets="Copy">
+		<Exec Command="start &quot;&quot; /D &quot;$(GameDir)&quot; &quot;$(GameExePath)&quot;" IgnoreExitCode="true" Condition="'$(Autostart)' == 'true'" />
+	</Target>
+</Project>

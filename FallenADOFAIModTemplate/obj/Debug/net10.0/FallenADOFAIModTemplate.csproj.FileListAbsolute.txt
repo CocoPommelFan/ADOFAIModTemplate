@@ -1,0 +1,14 @@
+C:\Users\colmi\source\repos\FallenADOFAIModTemplate\FallenADOFAIModTemplate\obj\Debug\net10.0\FallenADOFAIModTemplate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\colmi\source\repos\FallenADOFAIModTemplate\FallenADOFAIModTemplate\obj\Debug\net10.0\FallenADOFAIModTemplate.AssemblyInfoInputs.cache
+C:\Users\colmi\source\repos\FallenADOFAIModTemplate\FallenADOFAIModTemplate\obj\Debug\net10.0\FallenADOFAIModTemplate.AssemblyInfo.cs
+C:\Users\colmi\source\repos\FallenADOFAIModTemplate\FallenADOFAIModTemplate\obj\Debug\net10.0\FallenADOFAIModTemplate.csproj.CoreCompileInputs.cache
+C:\Users\colmi\source\repos\FallenADOFAIModTemplate\FallenADOFAIModTemplate\bin\Debug\net10.0\FallenADOFAIModTemplate.deps.json
+C:\Users\colmi\source\repos\FallenADOFAIModTemplate\FallenADOFAIModTemplate\bin\Debug\net10.0\FallenADOFAIModTemplate.dll
+C:\Users\colmi\source\repos\FallenADOFAIModTemplate\FallenADOFAIModTemplate\bin\Debug\net10.0\FallenADOFAIModTemplate.pdb
+C:\Users\colmi\source\repos\FallenADOFAIModTemplate\FallenADOFAIModTemplate\obj\Debug\net10.0\FallenADOFAIModTemplate.dll
+C:\Users\colmi\source\repos\FallenADOFAIModTemplate\FallenADOFAIModTemplate\obj\Debug\net10.0\refint\FallenADOFAIModTemplate.dll
+C:\Users\colmi\source\repos\FallenADOFAIModTemplate\FallenADOFAIModTemplate\obj\Debug\net10.0\FallenADOFAIModTemplate.pdb
+C:\Users\colmi\source\repos\FallenADOFAIModTemplate\FallenADOFAIModTemplate\obj\Debug\net10.0\ref\FallenADOFAIModTemplate.dll
+C:\Users\colmi\source\repos\FallenADOFAIModTemplate\FallenADOFAIModTemplate\bin\Debug\net10.0\0Harmony.dll
+C:\Users\colmi\source\repos\FallenADOFAIModTemplate\FallenADOFAIModTemplate\obj\Debug\net10.0\FallenADOFAIModTemplate.csproj.AssemblyReference.cache
+C:\Users\colmi\source\repos\FallenADOFAIModTemplate\FallenADOFAIModTemplate\obj\Debug\net10.0\FallenAD.0F4682F3.Up2Date
